@@ -1,0 +1,128 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 56px;
+}
+
+.navbar {
+  background-color: #040740;
+}
+
+#navitem:hover {
+  opacity: 80%;
+  background-color: black;
+  border-radius: 5%;
+}
+
+/*Carousel home hover*/
+.grayBlur:hover {
+  filter: grayscale(0.2) blur(5px);
+}
+
+.bg-lightGrey {
+  background-color: rgba(96, 96, 96, 0.461);
+}
+
+.shadow-warning {
+  filter: drop-shadow(8px 8px 10px rgb(255, 225, 0));
+}
+
+/*Floating Back-To-Top Button*/
+#myBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 0%;
+  left: 95%;
+  max-width: 50px;
+  width: 100%;
+  font-size: 25px;
+  padding: 0.5px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+/*On Hover Color Change*/
+#myBtn:hover {
+  filter: opacity(60%);
+}
+
+/*Redes Sociales*/
+#google-button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#facebook-button {
+  background-color: #02042a;
+  color: white;
+}
+
+#facebook-button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#form-image {
+  margin-left: 220px;
+  margin-bottom: 10px;
+}
+
+.texto_responsive:before {
+  /* attr() value linked to the HTML attribute value */
+  content: attr(data-desktoptext);
+}
+
+/*FOOTER*/
+.piedepagina {
+  background-color: #040740;
+}
+
+/* Responsive rules */
+/* medium devices ---> tablet */
+@media (min-width: 768px) and (max-width: 868px) {
+  #b-items {
+    font-size: 12px;
+  }
+  #title-sm {
+    font-size: 45px;
+  }
+
+  .texto_responsive:before {
+    /* attr() value linked to the HTML attribute value */
+    content: attr(data-tablettext);
+  }
+}
+
+@media (min-width: 869px) and (max-width: 991px) {
+  #b-items {
+    font-size: 15px;
+  }
+  .texto_responsive:before {
+    /* attr() value linked to the HTML attribute value */
+    content: attr(data-tablettext);
+  }
+}
+
+@media all and (max-width: 480px) {
+  #title-sm {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  #myBtn {
+    display: none;
+  }
+  #form-image {
+    margin-left: 130px;
+    margin-bottom: 10px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .texto_responsive:before {
+    /* attr() value linked to the HTML attribute value */
+    content: attr(data-phonetext);
+  }
+}

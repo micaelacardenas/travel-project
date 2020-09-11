@@ -1,0 +1,218 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alvaro Valenzuela, Micaela Garcia Cardenas, Daniel Rodolfo Lopez Sardi, Franco Casas">
+    <meta name="description" content="Te llevamos por el mundo desde tu casa!">
+    <meta name="keywords" content="blog,Blog,Viajes,viajes">
+    <title>Login</title>
+    <!--Link css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/5123056da0.js" crossorigin="anonymous"></script>
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
+    <!--Link Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <img class="mr-2" src="img/logo.png" width="30" height="30" alt="Logo">
+                <a class="navbar-brand" href="index.html">Travel the World</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item active" id="navitem">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item" id="navitem">
+                            <a class="nav-link" href="aboutus.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item" id="navitem">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item" id="navitem">
+                            <a class="nav-link" href="galeria.html">Galería de fotos</a>
+                        </li>
+                        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#example-modal">
+                            Suscripción
+                        </button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--BreadCrumb-->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb text-dark">
+            <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home pr-2" aria-hidden="true"></i>Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Login</li>
+        </ol>
+    </nav>
+    <!--BreadCrumb ends-->
+    <section class="container my-6">
+        <article class="row">
+            <div class="col-sm-12 col-md-6 ">
+                <img src="img/patagonia.jpg" alt="montaña san martin de los andes" class="mt-4 w-100">
+                <h4>San Martin de los Andes, Neuquen. Argentina.</h4>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <form class="shadow p-3 mb-5 bg-light rounded mt-4">
+                    <img id="form-image" src="img/logoNegro.png" width="50" height="50">
+                    <h4 class="display-8 text-center">Inicia sesión con:</h4>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1"></label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1"></label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter password">
+                        <a data-toggle="modal" data-target="#exampleModal" href="exampleModal">¿Olvidaste tu contraseña?
+                            Click aquí para cambiar tu clave.</a>
+                    </div>
+                    <div class="form-check mb-4">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
+                    </div>
+                    <button type="Submit" class="btn btn-primary container">Log In</button>
+                    <hr>
+                    <small id="emailHelp" class="form-text text-muted text-center active mb-2">O continúa con:</small>
+                    <a class="btn btn-primary btn-md w-100 mb-3" id="google-button" href="404.html" role="button">
+                        <i class="fab fa-google-plus-g" aria-hidden="true"></i><span class="pl-2">Continuar con Google</span>
+                    </a>
+                    <a class="btn btn-md w-100" id="facebook-button" href="404.html" role="button">
+                        <i class="fab fa-facebook" aria-hidden="true"></i><span class="pl-2">Continuar con Facebook</span>
+                    </a>
+                </form>
+                <hr>
+            </div>
+        </article>
+    </section>
+    <!-- Ads -->
+    <div class="col-sm-12">
+        <form class="shadow py-3 mb-5 bg-light rounded container">
+            <div class="container mt-2 text-center">
+                <video class="dtVideo w-100" muted="" preload="yes" autoplay=" " loop="">
+                    <source src="https://azcdn.odyssey.pgsitecore.com/es-ar/-/media/Pantene_AR/Images/MP4-Files/home banner_desktop_ARG.mp4?la=es-AR&amp;v=1-201904091313" type="video/mp4">
+                </video>
+            </div>
+        </form>
+    </div>
+    <!-- Modal cambiar contraseña -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cambiar la contraseña:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ol>
+                        <li>
+                            <h4>Restablece tu contraseña:</h4>
+                            Sigue los pasos para recuperar la cuenta. Te haremos algunas preguntas para confirmar que sea tu cuenta y te enviaremos un correo electrónico. Si no recibes un correo electrónico: Revisa las carpetas Spam o Correo masivo.
+                            <a href="404.html">Recibír correo electrónico</a>
+                        </li>
+                        <li>
+                            <h5 class="mt-2">Para solicitar otra contraseña:</h5>
+                            Comprueba todas las direcciones de correo electrónico que hayas podido usar para registrarte o acceder a tu cuenta.
+                            <a href="404.html">Solicitar contraseña nueva</a>
+                        </li>
+                        <li>
+                            <h5 class="mt-2">Elige una nueva contraseña</h5>
+                            Elige una contraseña que no hayas usado antes con esta cuenta. Obtén más información sobre cómo crear una contraseña segura.
+                            <a href="404.html">+ información</a>
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-secondary ml-2 mb-4" data-dismiss="modal">Salir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#top" id="myBtn"><i class="fas fa-arrow-circle-up fa-2x" aria-hidden="true"></i></a>
+
+    <!-- Modal subscribirse-->
+    <div class="modal fade" id="example-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title lead" id="exampleModalLabel">SUSCRIBIRSE</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1"></label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
+
+                            <small id="emailHelp" class="form-text text-muted">Ingresar correo electrónico válido.
+                                Suscríbete para recibír notificaciones semanales.</small>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Activar notificaciones</label>
+                        </div>
+                        <button type="Submit" class="btn btn-warning">Suscribirse</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="text-light py-4 piedepagina text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 text-center">
+                    <a href="index.html" class="text-decoration-none">
+                        <img src="img/logo.png" alt="Logo" width="30" height="30">
+                        <p class="lead text-decoration-none text-light">Travel the World</p>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <p><strong>Informacion Básica</strong></p>
+                    <p>Te daremos los mejores consejos para que tengas una experiencia increible.</p>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <p><strong>Encontranos En:</strong></p>
+                    <a href="404.html" class="text-decoration-none text-light">
+                        <i class="fab fa-facebook-f fa-2x p-2 facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="404.html" class="text-decoration-none text-light">
+                        <i class="fab fa-twitter fa-2x p-2 twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="404.html" class="text-decoration-none text-light">
+                        <i class="fab fa-instagram fa-2x p-2 instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-2">
+            <p class="text-center">© Todos los derechos reservados al Grupo 1</p>
+        </div>
+    </footer>
+    <!--Main Container ends-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
